@@ -1,7 +1,13 @@
 import Head from 'next/head'
-import Navbar from '../components/organisms/Navbar';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import MainBanner from '../components/MainBanner';
+import Navbar from '../components/Navbar';
  
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
        <Head>
@@ -13,6 +19,7 @@ export default function Home() {
         <meta property="og:url" content="https://storegg.com" />
       </Head>
       <Navbar />
+      <MainBanner />
     </>
   )
 }
