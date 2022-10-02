@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import MainBanner from '../components/MainBanner';
 import Navbar from '../components/Navbar';
+import TransactionStep from '../components/TransactionStep';
  
 export default function Home() {
   useEffect(() => {
@@ -20,6 +21,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <MainBanner />
+      <TransactionStep />
     </>
   )
 }
