@@ -4,7 +4,11 @@ import AOS from 'aos';
 import MainBanner from '../components/MainBanner';
 import Navbar from '../components/Navbar';
 import TransactionStep from '../components/TransactionStep';
- 
+import FeaturedGame from '../components/FeaturedGame';
+import Reached from '../components/Reached';
+import Story from '../components/Story';
+import Footer from '../components/Footer';
+
 export default function Home() {
   useEffect(() => {
     AOS.init();
@@ -22,6 +26,10 @@ export default function Home() {
       <Navbar />
       <MainBanner />
       <TransactionStep />
+      <FeaturedGame />
+      <Reached />
+      <Story />
+      <Footer />
     </>
   )
 }
