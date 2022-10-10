@@ -12,7 +12,7 @@ export default function FeatutredItem(props : FeatutredItemProps) {
   const {title, category, thumbnail, icon} = props;
   return (
     <div className="featured-game-card position-relative">
-        <Link href="/detail.html">
+        <Link href="/detail">
             <a>
                 <div className="blur-sharp">
                     <Image className='thumbnail' src={thumbnail} width={205} height={270} alt="" layout='fixed'/>
